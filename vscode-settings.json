@@ -1,0 +1,151 @@
+  // VS Code automatically highlights selected words.
+  // "vim.hlsearch": false,
+  "vim.timeout": 200,
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>",
+        "l"
+      ]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-f>": true,
+    "<C-a>": false
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "v",
+        "n"
+      ],
+      "after": [
+        "v",
+        "g",
+        "_",
+        "y"
+      ]
+    },
+    {
+      "before": [
+        "<C-w>"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "l"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ],
+      "when": "editorTextFocus"
+    },
+  ],
+  "vim.useCtrlKeys": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "<S-l>"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
+    },
+    {
+      "before": [
+        "<S-h>"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
+    },
+  ],
+  // vim mode viwy viwcmd+d p issue hack
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "p"
+      ],
+      "commands": [
+        "editor.action.clipboardPasteAction"
+      ]
+    },
+  ],
+  "breadcrumbs.enabled": false,
+  "editor.wordWrap": "off",
+  "editor.lineNumbers": "relative",
+  "editor.codeLens": false,
+  "editor.folding": false,
+  "editor.glyphMargin": false,
+  "editor.formatOnSave": false,
+  "editor.hover.enabled": true,
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": true,
+  "editor.renderWhitespace": "none",
+  "editor.suggestSelection": "first",
+  "editor.guides.indentation": false,
+  "editor.renderControlCharacters": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.renderLineHighlight": "all",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  },
+  // font settings
+  "editor.fontWeight": "500",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontWeightBold": "400",
+  "explorer.compactFolders": false,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/package-lock.json": true
+    // Hide js files after running tsc.
+    // "**/*.js": { "when": "$(basename).ts" }
+  },
+  "search.searchOnType": false,
+  "search.smartCase": true,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.gpuAcceleration": "on",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.list.defaultFindMode": "highlight",
+  "zenMode.hideLineNumbers": false,
+  "workbench.colorTheme": "Tokyo Night",
+  "editor.tabCompletion": "on",
+  "editor.fontFamily": "'Fira Code'",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "vim.commandLineModeKeyBindings": [
+    
+  ],
+}
